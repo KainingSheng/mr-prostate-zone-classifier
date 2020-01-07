@@ -1,5 +1,5 @@
 # MRI prostate exam zone classifier
-This is a 2D Convolutional Neural Network for classifying the location of prostate gland lesions found in T2-weighted MRI images. The model takes in MRI dicom files (.dcm) along with coordinates (ijk) for the suspected lesion. It then classifies the lesions as either belong to the periferal zone (PZ), transitional zone (TZ) or anterior fibromuscular stroma (AS). 
+This is a 2D Convolutional Neural Network for classifying the location of prostate gland lesions found in T2-weighted MRI images. The model takes in MRI dicom files (.dcm) along with coordinates (ijk) for the suspected lesion. It then classifies the lesions as either belonging to the periferal zone (PZ), transitional zone (TZ) or anterior fibromuscular stroma (AS). 
 
 Detailed instructions for usage: 
 
