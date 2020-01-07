@@ -1,4 +1,4 @@
-proxID,t2w_sequence,ijk_t2w,Zone
+patientID,t2w_sequence,ijk_t2w,Zone
 ProstateX-0000,4-t2tsetra-00702,167 224 9,PZ
 ProstateX-0001,6-t2tsetra-76610,157 186 10,AS
 ProstateX-0002,4-t2tsetra-44920,154 217 12,PZ
