@@ -2,7 +2,7 @@
 """
 Created on Fri Nov  1 16:14:31 2019
 
-@author: kaikai
+@author: KainingSheng
 """
 
 # import SimpleITK as sitk
@@ -20,17 +20,14 @@ def csvLoader(csv_path,csv_file):
         sequence_id = []
         ijk_t2w = []
         zone = []
-        zone_label = []
         
         for row in csv_reader:
             patient_id.append(row[0])
             ijk_t2w.append(row[1])
             sequence_id.append(row[2])
             zone.append(row[3])
-            zone_label.append(row[4])
     print('Lesions included in list:', len(patient_id))
-    return patient_id, ijk_t2w, sequence_id, zone, zone_label
-
+    return patient_id, ijk_t2w, sequence_id, zone
 
 def buildNumpyArray(patient_id, sequence_id, path):
     lstFilesDCM = []
