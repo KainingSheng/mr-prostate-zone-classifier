@@ -3,7 +3,7 @@ This is a 2D Convolutional Neural Network for classifying the location of prosta
 
 Detailed instructions for usage: 
 
-1) Download the whole repository to your local machine
+1) Download and extract the whole repository to your local machine
 
 2) In the 'Data' folder, put in the T2-weighted MRI images you wish classified. As an example, a few MRI dataset from a publicly available dataset (ProstateX) is already included. Remove those before you put in your own data. The directories in your data should be organized in the following manner for each patient scan: patient_id -> sequence_id -> dicomfile.dcm
 
