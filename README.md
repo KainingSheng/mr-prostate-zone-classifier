@@ -11,8 +11,8 @@ Detailed instructions for usage:
   row1: patient_id, 
   row2: sequence_id, 
   row3: lesion coordinates as image col, row and slice number. Col and row are what pixel values in the x and y direction the lesion is       located at, respectively, while slice number is the n'th slice with the most cranial slice being slice zero,  
-  row4: zone label (either PZ, TZ or AS), 
-See the existing csv-file (loadDataList.csv) for reference
+  row4: zone label (either PZ, TZ or AS) </br>
+  See the existing csv-file (loadDataList.csv) for reference
 
 4) From the Google Drive link provided in the 'Weight' folder, download the pre-trained model weights and put the .h5 file in the 'Weight' folder on your local machine. 
 
