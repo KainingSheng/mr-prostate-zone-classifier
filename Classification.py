@@ -65,10 +65,10 @@ print('test loss, test acc:', accuracy)
 predictions = pre_trained_model.predict(X_test, batch_size = 4)
 
 #Preparing data for comparison the predicted values and the truth label in a ROC-curve
-y_pred = []; y_truth = []
+y_pred = [];
 for i in range(len(predictions)):
     y_pred.append(predictions[i][1])
-    y_truth.append(int(zone_binary_label[i]))
+    y_truth = list(y_test[1])
 
 #Reporting ROC AUC of model along with 95% Confidential Interval calculated based on bootstrapping 2000 samples
 plotROC(y_truth,y_pred)
