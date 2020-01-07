@@ -63,7 +63,8 @@ accuracy = pre_trained_model.evaluate(X_test, y_test, batch_size=4)
 print('test loss, test acc:', accuracy)
 
 predictions = pre_trained_model.predict(X_test, batch_size = 4)
-print('Indiviudal zone predictions for each scan (1.col: AS, 2. col: PZ, 3.col:TZ:', predictions)
+print('Indiviudal zone predictions for each scan (1.col: AS, 2. col: PZ, 3.col:TZ):')
+print(predictions)
 
 #Preparing data for comparison the predicted values and the truth label in a ROC-curve
 y_pred = [];
