@@ -22,7 +22,7 @@ from postTrainingAnalysis import plotROC, getCIAUC
 path = r'Data'
 
 #Load in lists with patient IDs, T2-weighted sequence IDs, lesion coordinates (ijK), and the categorial zone labels for every patient from CSV file located in data folder
-patient_id, sequence_id, ijk_t2w, zone, zone_binary_label = csvLoader(path,csv_file='loadValDataList.csv')
+patient_id, sequence_id, ijk_t2w, zone = csvLoader(path,csv_file='loadValDataList.csv')
 
 #Load in MR T2-weighted DICOM files and convert to arrays with 3-dimensions
 t2w = dicomLoader(patient_id, sequence_id, path)
