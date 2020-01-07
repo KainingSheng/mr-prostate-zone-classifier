@@ -63,6 +63,7 @@ accuracy = pre_trained_model.evaluate(X_test, y_test, batch_size=4)
 print('test loss, test acc:', accuracy)
 
 predictions = pre_trained_model.predict(X_test, batch_size = 4)
+print('Indiviudal zone predictions for each scan (1.col: AS, 2. col: PZ, 3.col:TZ:', predictions)
 
 #Preparing data for comparison the predicted values and the truth label in a ROC-curve
 y_pred = [];
@@ -71,6 +72,7 @@ for i in range(len(predictions)):
     y_truth = list(y_test[1])
 
 #Reporting ROC AUC of model along with 95% Confidential Interval calculated based on bootstrapping 2000 samples
+print('Accuracy measures')
 plotROC(y_truth,y_pred)
 getCIAUC(y_truth,y_pred)
 
