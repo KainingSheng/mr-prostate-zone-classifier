@@ -17,3 +17,16 @@ Detailed instructions for usage:
 4) From the Google Drive link provided in the 'Weight' folder, download the pre-trained model weights and put the .h5 file in the 'Weight' folder on your local machine. 
 
 5) Run the 'Classification.py' script. It should report predictions for your dataset together with overall accuracy measures for the predictions. 
+
+Library needed to run the script:
+-numpy
+-pandas
+-sklearn
+-cv2
+-matplotlib.pyplot
+-csv
+
+-pydicom
+-tensorflow 2.0
+
+
