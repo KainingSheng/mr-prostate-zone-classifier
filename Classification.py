@@ -49,7 +49,7 @@ encoder.fit(zone)
 y_test = list(encoder.transform(zone))
 
 s = pd.Series(list(y_test))
-y_test = pd.get_dummies(s)
+y_test = np.asarray(pd.get_dummies(s))
 
 ##Loading test model
 pre_trained_model = tf.keras.models.load_model(
@@ -70,7 +70,7 @@ print(predictions)
 y_pred = [];
 for i in range(len(predictions)):
     y_pred.append(predictions[i][1])
-    y_truth = list(y_test[1])
+    y_truth = y_test.T[1]
 
 #Reporting ROC AUC of model along with 95% Confidential Interval calculated based on bootstrapping 2000 samples
 print('Accuracy measures')
